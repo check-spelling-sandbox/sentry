@@ -2796,7 +2796,7 @@ class QueryFields(QueryBase):
         return snql_function.snql_column(arguments, alias)
 
     def parse_function(self, match: Match[str]) -> Tuple[str, List[str], str]:
-        """Given a FUNCTION_PATTERN match, seperate the function name, arguments
+        """Given a FUNCTION_PATTERN match, separate the function name, arguments
         and alias out
         """
         function = match.group("function")
