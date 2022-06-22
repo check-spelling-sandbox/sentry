@@ -28,7 +28,7 @@ import {Hooks} from 'app/types/hooks';
  * All events go to Reload. If eventName is defined, events also go to Amplitude.
  * For more details, refer to the API defined in hooks.
  *
- * Shold NOT be used directly.
+ * Should NOT be used directly.
  * Instead, use makeAnalyticsFunction to generate an analytics function.
  */
 export const trackAnalyticsEventV2: Hooks['analytics:track-event-v2'] = (data, options) =>
