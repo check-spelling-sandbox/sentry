@@ -215,7 +215,7 @@ class GlobalSelectionHeader extends React.Component<Props, State> {
     callIfFunction(this.props.onUpdateTime, newValueObj);
   };
 
-  handleUpdateEnvironmments = () => {
+  handleUpdateEnvironments = () => {
     const {environments} = this.state;
     updateEnvironments(environments, this.props.router, this.getUpdateOptions());
     this.setState({environments: null});
@@ -372,7 +372,7 @@ class GlobalSelectionHeader extends React.Component<Props, State> {
                   selectedProjects={selectedProjects}
                   value={this.props.selection.environments}
                   onChange={this.handleChangeEnvironments}
-                  onUpdate={this.handleUpdateEnvironmments}
+                  onUpdate={this.handleUpdateEnvironments}
                 />
               </HeaderItemPosition>
             </React.Fragment>
