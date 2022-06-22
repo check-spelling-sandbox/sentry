@@ -6,7 +6,7 @@ import {RenderField} from 'app/views/settings/components/forms/projectMapperFiel
 describe('ProjectMapperField', () => {
   let wrapper;
   const mappedDropdown = {
-    placholder: 'hi',
+    placeholder: 'hi',
     items: [
       {value: '1', label: 'label 1'},
       {value: '2', label: 'label 2'},
