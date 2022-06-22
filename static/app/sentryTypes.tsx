@@ -68,7 +68,7 @@ const Group = PropTypes.shape({
     'error',
     'csp',
     'hpkp',
-    'expectct',
+    'expect',
     'expectstaple',
     'default',
     'transaction',

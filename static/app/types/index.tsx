@@ -805,7 +805,7 @@ export enum EventOrGroupType {
   ERROR = 'error',
   CSP = 'csp',
   HPKP = 'hpkp',
-  EXPECTCT = 'expectct',
+  EXPECTCT = 'expect',
   EXPECTSTAPLE = 'expectstaple',
   DEFAULT = 'default',
   TRANSACTION = 'transaction',

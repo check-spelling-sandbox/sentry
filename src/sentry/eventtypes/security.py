@@ -67,11 +67,11 @@ class HpkpEvent(SecurityEvent):
 
 
 class ExpectCTEvent(SecurityEvent):
-    key = "expectct"
+    key = "expect"
 
     def extract_metadata(self, data):
         metadata = SecurityEvent.extract_metadata(self, data)
-        metadata["origin"] = data["expectct"].get("hostname")
+        metadata["origin"] = data["expect"].get("hostname")
         return metadata
 
 

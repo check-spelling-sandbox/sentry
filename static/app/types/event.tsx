@@ -22,7 +22,7 @@ export enum EntryType {
   STACKTRACE = 'stacktrace',
   TEMPLATE = 'template',
   CSP = 'csp',
-  EXPECTCT = 'expectct',
+  EXPECTCT = 'expect',
   EXPECTSTAPLE = 'expectstaple',
   HPKP = 'hpkp',
   BREADCRUMBS = 'breadcrumbs',
