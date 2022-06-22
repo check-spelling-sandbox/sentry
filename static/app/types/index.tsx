@@ -1145,10 +1145,10 @@ export type ProcessingIssue = {
   numIssues: number;
   signedLink: string;
   lastSeen: string;
-  hasMoreResolveableIssues: boolean;
+  hasMoreResolvableIssues: boolean;
   hasIssues: boolean;
   issuesProcessing: number;
-  resolveableIssues: number;
+  resolvableIssues: number;
   issues?: ProcessingIssueItem[];
 };
 
