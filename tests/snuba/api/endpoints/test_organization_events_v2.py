@@ -66,7 +66,7 @@ class OrganizationEventsV2EndpointTest(APITestCase, SnubaTestCase):
             project_id=project.id,
         )
 
-        # Project ID cannot be inffered when using an org API key, so that must
+        # Project ID cannot be inferred when using an org API key, so that must
         # be passed in the parameters
         api_key = ApiKey.objects.create(organization=self.organization, scope_list=["org:read"])
         query = {"field": ["project.name", "environment"], "project": [project.id]}
