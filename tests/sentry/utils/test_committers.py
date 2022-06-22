@@ -19,7 +19,7 @@ from sentry.utils.committers import (
 )
 from sentry.utils.compat.mock import Mock
 
-# TODO(lb): Tests are still needed for _get_committers and _get_event_file_commiters
+# TODO(lb): Tests are still needed for _get_committers and _get_event_file_committers
 
 
 class CommitTestCase(TestCase):
