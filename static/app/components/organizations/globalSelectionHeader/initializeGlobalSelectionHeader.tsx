@@ -106,7 +106,7 @@ class InitializeGlobalSelectionHeader extends React.Component<Props> {
       } else if (!isEqual(oldQuery.environment, newQuery.environment)) {
         /**
          * When the project stays the same, it's still possible that the environment
-         * changed, so explictly update the environment
+         * changed, so explicitly update the environment
          */
         updateEnvironments(newEnvironments);
       }
