@@ -5,7 +5,7 @@ import NumberDragControl from 'app/components/numberDragControl';
 
 export default {
   title: 'Components/Forms/Controls/Number Drag Control',
-  componet: NumberDragControl,
+  component: NumberDragControl,
   args: {
     step: 1,
     shiftStep: 1,
