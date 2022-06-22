@@ -182,7 +182,7 @@ class FormField<P extends {} = {}> extends React.Component<Props<P>> {
   /**
    * Attempts to autofocus input field if field's name is in url hash.
    *
-   * The ref must be forwared for this to work.
+   * The ref must be forwarded for this to work.
    */
   handleInputMount = (node: HTMLElement | null) => {
     if (node && !this.input) {
