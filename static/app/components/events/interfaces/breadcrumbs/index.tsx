@@ -208,15 +208,15 @@ function BreadcrumbsContainer({
     );
   }
 
-  function getFilteredCrumbsByFilter(newfilterOptions: FilterOptions) {
+  function getFilteredCrumbsByFilter(newFilterOptions: FilterOptions) {
     const checkedTypeOptions = new Set(
-      Object.values(newfilterOptions)[0]
+      Object.values(newFilterOptions)[0]
         .filter(filterOption => filterOption.isChecked)
         .map(option => option.id)
     );
 
     const checkedLevelOptions = new Set(
-      Object.values(newfilterOptions)[1]
+      Object.values(newFilterOptions)[1]
         .filter(filterOption => filterOption.isChecked)
         .map(option => option.id)
     );
@@ -297,14 +297,14 @@ function BreadcrumbsContainer({
     });
   }
 
-  function handleFilter(newfilterOptions: FilterOptions) {
-    const newfilteredByFilter = getFilteredCrumbsByFilter(newfilterOptions);
+  function handleFilter(newFilterOptions: FilterOptions) {
+    const newFilteredByFilter = getFilteredCrumbsByFilter(newFilterOptions);
 
     setState({
       ...state,
-      filterOptions: newfilterOptions,
-      filteredByFilter: newfilteredByFilter,
-      filteredBySearch: filterBySearch(searchTerm, newfilteredByFilter),
+      filterOptions: newFilterOptions,
+      filteredByFilter: newFilteredByFilter,
+      filteredBySearch: filterBySearch(searchTerm, newFilteredByFilter),
     });
   }
 
