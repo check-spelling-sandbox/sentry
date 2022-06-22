@@ -365,7 +365,7 @@ function AppStoreConnect({
       setSessionContext(response.sessionContext);
       addSuccessMessage(t("We've sent a SMS code to your phone"));
     } catch {
-      addErrorMessage(t('An error occured while sending the SMS. Please try again'));
+      addErrorMessage(t('An error occurred while sending the SMS. Please try again'));
     }
   }
 
