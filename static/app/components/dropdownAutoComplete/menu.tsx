@@ -262,7 +262,7 @@ const Menu = ({
       const showInput = !hideInput && (hasItems || !emptyHidesInput);
 
       // When virtualization is turned on, we need to pass in the number of
-      // selecteable items for arrow-key limits
+      // selectable items for arrow-key limits
       const itemCount = virtualizedHeight
         ? autoCompleteResults.filter(i => !i.groupLabel).length
         : undefined;
