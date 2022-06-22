@@ -92,7 +92,7 @@ const Wrapper = styled('div')`
   }
 `;
 
-export const TimelineScubber = styled(Scrubber)`
+export const TimelineScrubber = styled(Scrubber)`
   height: ${space(0.5)};
 
   :hover {
