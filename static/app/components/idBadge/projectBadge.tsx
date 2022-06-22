@@ -22,7 +22,7 @@ type Props = Partial<Omit<BaseBadgeProps, 'project' | 'organization' | 'team'>> 
    */
   disableLink?: boolean;
   /**
-   * Overides where the project badge links
+   * Overrides where the project badge links
    */
   to?: React.ComponentProps<typeof Link>['to'];
   className?: string;
