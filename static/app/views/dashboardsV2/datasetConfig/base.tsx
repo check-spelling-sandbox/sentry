@@ -133,7 +133,7 @@ export interface DatasetConfig<SeriesResponse, TableResponse> {
   handleOrderByReset?: (widgetQuery: WidgetQuery, newFields: string[]) => WidgetQuery;
   /**
    * Transforms timeseries API results into series data that is
-   * ingestable by echarts for timeseries visualizations.
+   * ingestible by echarts for timeseries visualizations.
    */
   transformSeries?: (
     data: SeriesResponse,
