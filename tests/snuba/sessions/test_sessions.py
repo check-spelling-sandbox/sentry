@@ -726,7 +726,7 @@ class SnubaSessionsTest(TestCase, SnubaTestCase):
 
 class SnubaSessionsTestMetrics(ReleaseHealthMetricsTestCase, SnubaSessionsTest):
     """
-    Same tests as in SnunbaSessionsTest but using the Metrics backend
+    Same tests as in SnubaSessionsTest but using the Metrics backend
     """
 
     pass
