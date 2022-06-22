@@ -33,7 +33,7 @@ def test_build_snuba_query(mock_now, mock_now2):
         {
             "query": [
                 "release:staging"
-            ],  # weird release but we need a string exising in mock indexer
+            ],  # weird release but we need a string existing in mock indexer
             "groupBy": ["session.status", "environment"],
             "field": [
                 "sum(session)",
