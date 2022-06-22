@@ -10,7 +10,7 @@ from sentry_plugins.github.plugin import GitHubAppsRepositoryProvider, GitHubRep
 from sentry_plugins.github.testutils import (
     COMPARE_COMMITS_EXAMPLE,
     GET_LAST_COMMITS_EXAMPLE,
-    INTSTALLATION_REPOSITORIES_API_RESPONSE,
+    INSTALLATION_REPOSITORIES_API_RESPONSE,
     LIST_INSTALLATION_API_RESPONSE,
 )
 from social_auth.models import UserSocialAuth
@@ -175,7 +175,7 @@ class GitHubAppsProviderTest(PluginTestCase):
     @patch.object(
         GitHubAppsClient,
         "get_repositories",
-        return_value=json.loads(INTSTALLATION_REPOSITORIES_API_RESPONSE),
+        return_value=json.loads(INSTALLATION_REPOSITORIES_API_RESPONSE),
     )
     @patch.object(
         GitHubClient, "get_installations", return_value=json.loads(LIST_INSTALLATION_API_RESPONSE)
