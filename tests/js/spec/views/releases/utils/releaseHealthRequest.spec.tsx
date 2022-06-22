@@ -90,7 +90,7 @@ describe('ReleaseHealthRequest', function () {
     {
       url: `/organizations/org-slug/sessions/`,
       // @ts-expect-error
-      body: TestStubs.SesssionTotalCountByReleaseIn24h(),
+      body: TestStubs.SessionTotalCountByReleaseIn24h(),
     },
     {
       predicate(_url, {query}) {
@@ -112,7 +112,7 @@ describe('ReleaseHealthRequest', function () {
     {
       url: `/organizations/${organization.slug}/sessions/`,
       // @ts-ignore Cannot find TestStubs
-      body: TestStubs.SesssionTotalCountByReleaseIn24h(),
+      body: TestStubs.SessionTotalCountByReleaseIn24h(),
     },
     {
       predicate(_url, {query}) {
