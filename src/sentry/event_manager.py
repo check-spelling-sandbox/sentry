@@ -91,7 +91,7 @@ from sentry.utils.safe import get_path, safe_execute, setdefault_path, trim
 
 logger = logging.getLogger("sentry.events")
 
-SECURITY_REPORT_INTERFACES = ("csp", "hpkp", "expectct", "expectstaple")
+SECURITY_REPORT_INTERFACES = ("csp", "hpkp", "expect", "expectstaple")
 
 # Timeout for cached group crash report counts
 CRASH_REPORT_TIMEOUT = 24 * 3600  # one day

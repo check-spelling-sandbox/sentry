@@ -9,7 +9,7 @@ def make_expectct_snapshot(insta_snapshot):
     def inner(data):
         mgr = EventManager(
             data={
-                "expectct": data,
+                "expect": data,
                 "logentry": {"message": "XXX EXPECTCT MESSAGE NOT THROUGH RELAY XXX"},
             }
         )
@@ -20,7 +20,7 @@ def make_expectct_snapshot(insta_snapshot):
         data.update(materialize_metadata(data, event_type, event_metadata))
         evt = eventstore.create_event(data=data)
 
-        interface = evt.interfaces.get("expectct")
+        interface = evt.interfaces.get("expect")
 
         insta_snapshot(
             {

@@ -1261,7 +1261,7 @@ SENTRY_SMTP_PORT = 1025
 SENTRY_INTERFACES = {
     "csp": "sentry.interfaces.security.Csp",
     "hpkp": "sentry.interfaces.security.Hpkp",
-    "expectct": "sentry.interfaces.security.ExpectCT",
+    "expect": "sentry.interfaces.security.ExpectCT",
     "expectstaple": "sentry.interfaces.security.ExpectStaple",
     "exception": "sentry.interfaces.exception.Exception",
     "logentry": "sentry.interfaces.message.Message",

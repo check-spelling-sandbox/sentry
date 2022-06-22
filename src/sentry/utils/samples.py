@@ -175,7 +175,7 @@ def load_data(
         return
 
     data = CanonicalKeyDict(data)
-    if platform in ("csp", "hkpk", "expectct", "expectstaple"):
+    if platform in ("csp", "hkpk", "expect", "expectstaple"):
         return data
 
     # Generate a timestamp in the present.
