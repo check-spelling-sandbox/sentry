@@ -62,8 +62,8 @@ export type ChoiceMapperProps = {
    * Example - Selects differ for each of the items available:
    *
    * {
-   *   'my_object_value':  {'colum_key1': {...select1}, 'column_key2': {...select2}},
-   *   'other_object_val': {'colum_key1': {...select3}, 'column_key2': {...select4}},
+   *   'my_object_value':  {'column_key1': {...select1}, 'column_key2': {...select2}},
+   *   'other_object_val': {'column_key1': {...select3}, 'column_key2': {...select4}},
    * }
    */
   mappedSelectors: MappedSelectors;
