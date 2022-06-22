@@ -18,7 +18,7 @@ type Props = WithRouterProps & {
   organization: Organization;
   project: Project;
   /**
-   * Specific platforms to filter reults to
+   * Specific platforms to filter results to
    */
   platforms: string[];
   /**
