@@ -106,7 +106,7 @@ describe('ProjectCard', function () {
     expect(total).toHaveLength(1);
     expect(total.text()).toContain('errors: 6');
 
-    // No transacions as the feature isn't set.
+    // No transactions as the feature isn't set.
     const transactions = wrapper.find('a[data-test-id="project-transactions"]');
     expect(transactions).toHaveLength(0);
   });
