@@ -181,7 +181,7 @@ class DataExportTest(APITestCase):
     def test_export_invalid_date_params(self):
         """
         Ensures that if an invalidate date parameter is specified, returns a 400 status code
-        with the corresponding error messgae.
+        with the corresponding error message.
         """
         payload = self.make_payload("discover", {"statsPeriod": "shrug"})
         with self.feature("organizations:discover-query"):
