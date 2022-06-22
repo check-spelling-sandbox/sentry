@@ -12,7 +12,7 @@ import ReplayTimelineEvents from 'sentry/components/replays/breadcrumbs/replayTi
 import ReplayTimelineSpans from 'sentry/components/replays/breadcrumbs/replayTimelineSpans';
 import Stacked from 'sentry/components/replays/breadcrumbs/stacked';
 import HorizontalMouseTracking from 'sentry/components/replays/player/horizontalMouseTracking';
-import {TimelineScubber} from 'sentry/components/replays/player/scrubber';
+import {TimelineScrubber} from 'sentry/components/replays/player/scrubber';
 import {useReplayContext} from 'sentry/components/replays/replayContext';
 import {Resizeable} from 'sentry/components/replays/resizeable';
 import TimelinePosition from 'sentry/components/replays/timelinePosition';
@@ -63,7 +63,7 @@ function ReplayTimeline({}: Props) {
                   />
                 ) : null}
                 <div>
-                  <TimelineScubber />
+                  <TimelineScrubber />
                   <ReplayTimelineEvents
                     crumbs={userCrumbs}
                     duration={duration || 0}
