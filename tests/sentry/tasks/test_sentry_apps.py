@@ -30,7 +30,7 @@ from sentry.utils.http import absolute_uri
 from sentry.utils.sentryappwebhookrequests import SentryAppWebhookRequestsBuffer
 
 
-def raiseStatuseFalse():
+def raiseStatusFalse():
     return False
 
 
@@ -47,7 +47,7 @@ RuleFuture = namedtuple("RuleFuture", ["rule", "kwargs"])
 MockResponse = namedtuple(
     "MockResponse", ["headers", "content", "text", "ok", "status_code", "raise_for_status"]
 )
-MockResponseInstance = MockResponse({}, {}, "", True, 200, raiseStatuseFalse)
+MockResponseInstance = MockResponse({}, {}, "", True, 200, raiseStatusFalse)
 MockFailureResponseInstance = MockResponse({}, {}, "", False, 400, raiseStatusTrue)
 MockResponse404 = MockResponse({}, {}, "", False, 404, raiseException)
 MockResponseWithHeadersInstance = MockResponse(
