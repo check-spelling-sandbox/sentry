@@ -31,7 +31,7 @@ class SuperuserTestCase(TestCase):
     def setUp(self):
         super().setUp()
         self.current_datetime = timezone.now()
-        self.default_token = "abcdefghjiklmnog"
+        self.default_token = "abcdefghijklmnop"
 
     def build_request(
         self,
