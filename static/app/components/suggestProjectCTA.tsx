@@ -93,7 +93,7 @@ class SuggestProjectCTA extends Component<Props, State> {
    * conditions to show prompt:
    * 1. Have a mobile event
    * 2. No mobile project
-   * 3. CTA is not dimissed
+   * 3. CTA is not dismissed
    * 4. We've loaded the data from the backend for the prompt
    */
   get showCTA() {
