@@ -333,7 +333,7 @@ def _release_stage_filter_converter(
     Parses a release stage search and returns a snuba condition to filter to the
     requested releases.
     """
-    # TODO: Filter by project here as well. It's done elsewhere, but could critcally limit versions
+    # TODO: Filter by project here as well. It's done elsewhere, but could critically limit versions
     # for orgs with thousands of projects, each with their own releases (potentailly drowning out ones we care about)
 
     if not params or "organization_id" not in params:
@@ -1635,7 +1635,7 @@ class QueryFilter(QueryFields):
         Parses a release stage search and returns a snuba condition to filter to the
         requested releases.
         """
-        # TODO: Filter by project here as well. It's done elsewhere, but could critcally limit versions
+        # TODO: Filter by project here as well. It's done elsewhere, but could critically limit versions
         # for orgs with thousands of projects, each with their own releases (potentailly drowning out ones we care about)
 
         if "organization_id" not in self.params:
