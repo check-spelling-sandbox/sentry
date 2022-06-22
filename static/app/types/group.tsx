@@ -487,7 +487,7 @@ export type ProcessingIssue = {
   lastSeen: string;
   numIssues: number;
   project: string;
-  resolveableIssues: number;
+  resolvableIssues: number;
   signedLink: string;
   issues?: ProcessingIssueItem[];
 };
