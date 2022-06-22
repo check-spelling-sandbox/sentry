@@ -104,9 +104,9 @@ export const growthEventMap: Record<GrowthAnalyticsKey, string> = {
   'growth.demo_modal_clicked_signup': 'Growth: Demo Modal Clicked Signup',
   'growth.demo_modal_clicked_continue': 'Growth: Demo Modal Clicked Continue',
   'growth.sample_transaction_docs_link_clicked':
-    'Growth: Sample Transacton Docs Link Clicked',
+    'Growth: Sample Transaction Docs Link Clicked',
   'growth.sample_error_onboarding_link_clicked':
-    'Growth: Sample Transacton Onboarding Link Clicked',
+    'Growth: Sample Transaction Onboarding Link Clicked',
   'growth.issue_open_in_discover_btn_clicked':
     'Growth: Open in Discover Button in Issue Details clicked',
 };
