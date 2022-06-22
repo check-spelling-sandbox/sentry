@@ -346,7 +346,7 @@ describe('Dashboards > Detail', function () {
       expect(modal.find('AddDashboardWidgetModal').props().widget).toEqual(widgets[0]);
     });
 
-    it('shows add wiget option', async function () {
+    it('shows add widget option', async function () {
       wrapper = mountWithTheme(
         <ViewEditDashboard
           organization={initialData.organization}
