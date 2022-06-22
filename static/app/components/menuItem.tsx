@@ -41,7 +41,7 @@ type MenuItemProps = {
    */
   eventKey?: any;
   /**
-   * Is the item actively seleted?
+   * Is the item actively selected?
    */
   isActive?: boolean;
   /**
