@@ -349,13 +349,13 @@ class OrganizationMemberListTest(APITestCase):
         with self.settings(SENTRY_ENABLE_INVITES=False):
             resp = self.client.post(
                 self.url,
-                {"email": "notexisting@example.com", "role": "admin", "teams": [self.team.slug]},
+                {"email": "nonexistent@example.com", "role": "admin", "teams": [self.team.slug]},
             )
 
         assert resp.status_code == 201
 
         member = OrganizationMember.objects.get(
-            organization=self.org, email="notexisting@example.com"
+            organization=self.org, email="nonexistent@example.com"
         )
         assert len(mail.outbox) == 0
         # todo(maxbittker) this test is a false positive, need to figure out why
