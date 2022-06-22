@@ -110,7 +110,7 @@ class EventWaiter extends React.Component<Props, State> {
 
       // noinspection SpellCheckingInspection
       recordAnalyticsFirstEvent({
-        key: 'first_event_recieved',
+        key: 'first_event_received',
         organization,
         project,
       });
@@ -118,7 +118,7 @@ class EventWaiter extends React.Component<Props, State> {
       firstIssue = firstEvent;
       // noinspection SpellCheckingInspection
       recordAnalyticsFirstEvent({
-        key: 'first_transaction_recieved',
+        key: 'first_transaction_received',
         organization,
         project,
       });

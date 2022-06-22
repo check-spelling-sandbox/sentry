@@ -506,7 +506,7 @@ def callback_timing(
     # This really shouldn't happen on the primary backend, but playing it safe
     # here out of an abundance of caution.
     if not all(primary_timing):
-        logger.warning("Recieved timing with unexpected endpoint: %r", primary_timing)
+        logger.warning("Received timing with unexpected endpoint: %r", primary_timing)
         return
 
     primary_duration_ms = (primary_timing[1] - primary_timing[0]) * 1000
