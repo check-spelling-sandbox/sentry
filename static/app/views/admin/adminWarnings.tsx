@@ -4,7 +4,7 @@ import {t} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
 
 type Data = {
-  groups: [groupName: string, grouppedWarnings: string[]][];
+  groups: [groupName: string, groupedWarnings: string[]][];
   warnings: string[];
 };
 
