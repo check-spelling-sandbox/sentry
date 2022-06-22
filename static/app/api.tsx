@@ -334,7 +334,7 @@ export class Client {
   }
 
   /**
-   * Initate a request to the backend API.
+   * Initiate a request to the backend API.
    *
    * Consider using `requestPromise` for the async Promise version of this method.
    */
