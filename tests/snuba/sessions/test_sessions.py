@@ -148,7 +148,7 @@ class SnubaSessionsTest(TestCase, SnubaTestCase):
         """
         Test that ensures that `check_has_health_data` returns a set of projects that has health
         data within the last 90d if only a list of project ids is provided and that any project
-        with session data older than 90 days should be exluded
+        with session data older than 90 days should be excluded
         """
         project2 = self.create_project(
             name="Bar2",
