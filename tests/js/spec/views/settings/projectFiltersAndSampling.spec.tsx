@@ -407,7 +407,7 @@ describe('Filters and Sampling', function () {
 
       expect(modal.getByRole('button', {name: 'Save Rule'})).toBeDisabled();
 
-      // Type into realease field
+      // Type into release field
       fireEvent.change(
         within(modal.getByTestId('autocomplete-release')).getByLabelText(
           'Search or add a release'
@@ -619,7 +619,7 @@ describe('Filters and Sampling', function () {
 
       expect(modal.getByRole('button', {name: 'Save Rule'})).toBeDisabled();
 
-      // Type into realease field
+      // Type into release field
       fireEvent.change(
         within(modal.getByTestId('autocomplete-release')).getByLabelText(
           'Search or add a release'
@@ -830,7 +830,7 @@ describe('Filters and Sampling', function () {
 
       expect(modal.getByRole('button', {name: 'Save Rule'})).toBeDisabled();
 
-      // Type into realease field
+      // Type into release field
       fireEvent.change(
         within(modal.getByTestId('autocomplete-release')).getByLabelText(
           'Search or add a release'
@@ -1126,7 +1126,7 @@ describe('Filters and Sampling', function () {
       const releaseFieldValues = within(releaseField).queryAllByTestId('multivalue');
       expect(releaseFieldValues).toHaveLength(0);
 
-      // Type into realease field
+      // Type into release field
       fireEvent.change(within(releaseField).getByLabelText('Search or add a release'), {
         target: {value: '1.2.3'},
       });
@@ -1330,7 +1330,7 @@ describe('Filters and Sampling', function () {
         const releaseFieldValues = within(releaseField).queryAllByTestId('multivalue');
         expect(releaseFieldValues).toHaveLength(0);
 
-        // Type into realease field
+        // Type into release field
         fireEvent.change(within(releaseField).getByLabelText('Search or add a release'), {
           target: {value: '1.2.3'},
         });
@@ -1444,7 +1444,7 @@ describe('Filters and Sampling', function () {
           const releaseFieldValues = within(releaseField).queryAllByTestId('multivalue');
           expect(releaseFieldValues).toHaveLength(0);
 
-          // Type into realease field
+          // Type into release field
           fireEvent.change(
             within(releaseField).getByLabelText('Search or add a release'),
             {
