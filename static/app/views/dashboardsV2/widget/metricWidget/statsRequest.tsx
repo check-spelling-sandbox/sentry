@@ -137,13 +137,13 @@ function StatsRequest({
       });
   }
 
-  function getChartData(sessionReponses: SessionApiResponse[]) {
-    if (!sessionReponses.length) {
+  function getChartData(sessionResponses: SessionApiResponse[]) {
+    if (!sessionResponses.length) {
       setIsLoading(false);
       return;
     }
 
-    const seriesData = sessionReponses.map((sessionResponse, index) => {
+    const seriesData = sessionResponses.map((sessionResponse, index) => {
       const {aggregation, legend, metricMeta} = filteredGroupings[index];
       const field = `${aggregation}(${metricMeta.name})`;
 
