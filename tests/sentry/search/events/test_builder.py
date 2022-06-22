@@ -2422,7 +2422,7 @@ class HistogramMetricQueryBuilderTest(MetricBuilderBaseTest):
         )
         snql_query = query.run_query("test_query")
         assert len(snql_query["data"]) == 1
-        # This data is intepolated via rebucket_histogram
+        # This data is interpolated via rebucket_histogram
         assert snql_query["data"][0]["histogram_transaction_duration"] == [
             (0.0, 100.0, 0),
             (100.0, 200.0, 2),
@@ -2453,7 +2453,7 @@ class HistogramMetricQueryBuilderTest(MetricBuilderBaseTest):
         )
         snql_query = query.run_query("test_query")
         assert len(snql_query["data"]) == 1
-        # This data is intepolated via rebucket_histogram
+        # This data is interpolated via rebucket_histogram
         assert snql_query["data"][0]["histogram_transaction_duration"] == [
             (0.0, 100.0, 10),
             (100.0, 200.0, 17),
