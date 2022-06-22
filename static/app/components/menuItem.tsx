@@ -25,7 +25,7 @@ type MenuItemProps = {
    */
   divider?: boolean;
   /**
-   * The title/tooltipe of the item
+   * The title/tooltip of the item
    */
   title?: string;
   /**
