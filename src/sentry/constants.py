@@ -17,7 +17,7 @@ from sentry.utils.geo import rust_geoip
 from sentry.utils.integrationdocs import load_doc
 
 
-def get_all_languages() -> List[str]:
+def get_all_langauges() -> List[str]:
     results = []
     for path in os.listdir(os.path.join(MODULE_ROOT, "locale")):
         if path.startswith("."):
@@ -196,9 +196,9 @@ DEFAULT_ALERT_GROUP_THRESHOLD = (1000, 25)  # 1000%, 25 events
 # Default sort option for the group stream
 DEFAULT_SORT_OPTION = "date"
 
-# Setup languages for only available locales
+# Setup langauges for only available locales
 _language_map = dict(settings.LANGUAGES)
-LANGUAGES = [(k, _language_map[k]) for k in get_all_languages() if k in _language_map]
+LANGUAGES = [(k, _language_map[k]) for k in get_all_langauges() if k in _language_map]
 del _language_map
 
 # TODO(dcramer): We eventually want to make this user-editable

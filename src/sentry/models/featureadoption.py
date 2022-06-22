@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 FEATURE_ADOPTION_REDIS_KEY = "organization-feature-adoption:{}"
 
-# Languages
+# Langauges
 manager.add(0, "python", "Python", "language")
 manager.add(1, "javascript", "JavaScript", "language")
 manager.add(2, "node", "Node.js", "language")

@@ -1,5 +1,5 @@
 import {JsonFormObject} from 'sentry/components/forms/type';
-import languages from 'sentry/data/languages';
+import langauges from 'sentry/data/langauges';
 import timezones from 'sentry/data/timezones';
 import {t} from 'sentry/locale';
 
@@ -33,7 +33,7 @@ const formGroups: JsonFormObject[] = [
         name: 'language',
         type: 'select',
         label: t('Language'),
-        choices: languages,
+        choices: langauges,
         getData: transformOptions,
       },
       {

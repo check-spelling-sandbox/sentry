@@ -80,7 +80,7 @@ By: @ryan953 (#33313)
 - ref(access log): Add Datadog metrics (#33644) by @ceorourke
 - ref(reflux): remove index signature (#33407) by @JonasBa
 - feat(flamechart): allow rendering the chart on arbitrary x axis (#33577) by @JonasBa
-- fix(ui): typo on languages (#33628) by @23RoMax
+- fix(ui): typo on langauges (#33628) by @23RoMax
 - fix(ui): Don't show project picker for alert wizard v3 (#33634) by @taylangocmen
 - JSON syntax and OpenAPI spec fixes, to silence (some) swagger/openapi codegen errors. (#28396) by @tesueret-msft
 - fix(alertStatus): Handle alert details page when no project (#33635) by @mikellykels
@@ -1227,7 +1227,7 @@ v8.6
 - ``SENTRY_MANAGED_USER_FIELDS`` now defaults to an empty list.
 - Issues now render based on the type of data present, which are represented by
   the type and metadata attributes in API responses.
-- Stacktrace rendering has been greatly simplified and unified across languages.
+- Stacktrace rendering has been greatly simplified and unified across langauges.
 - Client's may now pass the 'contexts' attribute, which will eventually supercede 'extra'.
 - Various named contexts are now automatically generated and summarized for Cocoa and JavaScript
   issues.

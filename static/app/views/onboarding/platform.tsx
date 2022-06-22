@@ -142,7 +142,7 @@ class OnboardingPlatform extends Component<Props, State> {
           <p>
             {tct(
               `Variety is the spice of application monitoring. Sentry SDKs integrate
-             with most languages and platforms your developer heart desires.
+             with most langauges and platforms your developer heart desires.
              [link:View the full list].`,
               {link: <ExternalLink href="https://docs.sentry.io/platforms/" />}
             )}

@@ -158,7 +158,7 @@ const localeCatalog: LocaleCatalog = JSON.parse(
 // [0] https://docs.djangoproject.com/en/2.1/topics/i18n/#term-locale-name
 const localeToLanguage = (locale: string) => locale.toLowerCase().replace('_', '-');
 const supportedLocales = localeCatalog.supported_locales;
-const supportedLanguages = supportedLocales.map(localeToLanguage);
+const supportedLangauges = supportedLocales.map(localeToLanguage);
 
 type CacheGroups = Exclude<
   NonNullable<Configuration['optimization']>['splitChunks'],
@@ -379,7 +379,7 @@ const appConfig: Configuration = {
     ),
     new webpack.ContextReplacementPlugin(
       /moment\/locale/,
-      new RegExp(`(${supportedLanguages.join('|')})\\.js$`)
+      new RegExp(`(${supportedLangauges.join('|')})\\.js$`)
     ),
   ],
 
