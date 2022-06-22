@@ -6,13 +6,13 @@ import {initializeOrg} from 'sentry-test/initializeOrg';
 import ProjectsStore from 'app/stores/projectsStore';
 import Onboarding from 'app/views/onboarding/onboarding';
 
-const MockStep = ({name, data, active, project, onComplete, onUpadte}) => (
+const MockStep = ({name, data, active, project, onComplete, onUpdate}) => (
   <div>
     {active && <div id="is_active" />}
     <div id="step_name">{name}</div>
     <div id="project_slug">{project && project.slug}</div>
     <a id="complete" href="#" onClick={() => onComplete(data)} />
-    <a id="update" href="#" onClick={() => onUpadte(data)} />
+    <a id="update" href="#" onClick={() => onUpdate(data)} />
   </div>
 );
 
