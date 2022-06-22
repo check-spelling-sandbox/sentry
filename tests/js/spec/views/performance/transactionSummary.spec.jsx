@@ -323,7 +323,7 @@ describe('Performance > TransactionSummary', function () {
     expect(wrapper.find('CreateAlertFromViewButton')).toHaveLength(1);
   });
 
-  it('fetches transaction threshdold', async function () {
+  it('fetches transaction threshold', async function () {
     const initialData = initializeData();
     const getTransactionThresholdMock = MockApiClient.addMockResponse({
       url: '/organizations/org-slug/project-transaction-threshold-override/',
@@ -358,7 +358,7 @@ describe('Performance > TransactionSummary', function () {
     wrapper.unmount();
   });
 
-  it('fetches project transaction threshdold', async function () {
+  it('fetches project transaction threshold', async function () {
     const initialData = initializeData();
     const getTransactionThresholdMock = MockApiClient.addMockResponse({
       url: '/organizations/org-slug/project-transaction-threshold-override/',
