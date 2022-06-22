@@ -25,7 +25,7 @@ import {displayCrashFreePercent, roundDuration} from '../../utils';
 import {EventType, YAxis} from './chart/releaseChartControls';
 import {
   fillChartDataFromSessionsResponse,
-  fillCrashFreeChartDataFromSessionsReponse,
+  fillCrashFreeChartDataFromSessionsResponse,
   getInterval,
   getReleaseEventView,
   getTotalsFromSessionsResponse,
@@ -302,26 +302,26 @@ class ReleaseStatsRequest extends React.Component<Props, State> {
         }),
       ]);
 
-    let chartData = fillCrashFreeChartDataFromSessionsReponse({
+    let chartData = fillCrashFreeChartDataFromSessionsResponse({
       response: releaseResponse,
       field: 'sum(session)',
       entity: 'sessions',
       chartData: initCrashFreeChartData(),
     });
-    chartData = fillCrashFreeChartDataFromSessionsReponse({
+    chartData = fillCrashFreeChartDataFromSessionsResponse({
       response: releaseResponse,
       field: 'count_unique(user)',
       entity: 'users',
       chartData,
     });
 
-    let otherChartData = fillCrashFreeChartDataFromSessionsReponse({
+    let otherChartData = fillCrashFreeChartDataFromSessionsResponse({
       response: otherReleasesResponse,
       field: 'sum(session)',
       entity: 'sessions',
       chartData: initOtherCrashFreeChartData(),
     });
-    otherChartData = fillCrashFreeChartDataFromSessionsReponse({
+    otherChartData = fillCrashFreeChartDataFromSessionsResponse({
       response: otherReleasesResponse,
       field: 'count_unique(user)',
       entity: 'users',

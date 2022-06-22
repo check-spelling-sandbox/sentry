@@ -416,19 +416,19 @@ export function fillChartDataFromSessionsResponse({
   return chartData;
 }
 
-type FillCrashFreeChartDataFromSessionsReponseProps = {
+type FillCrashFreeChartDataFromSessionsResponseProps = {
   response: SessionApiResponse;
   field: string;
   entity: 'sessions' | 'users';
   chartData: ChartData;
 };
 
-export function fillCrashFreeChartDataFromSessionsReponse({
+export function fillCrashFreeChartDataFromSessionsResponse({
   response,
   field,
   entity,
   chartData,
-}: FillCrashFreeChartDataFromSessionsReponseProps) {
+}: FillCrashFreeChartDataFromSessionsResponseProps) {
   response.intervals.forEach((interval, index) => {
     const intervalTotalSessions = response.groups.reduce(
       (acc, group) => acc + group.series[field][index],
