@@ -274,7 +274,7 @@ class Sidebar extends React.Component<Props, State> {
         organization={organization}
       >
         <SidebarOverride id="performance-override">
-          {(overideProps: Partial<React.ComponentProps<typeof SidebarItem>>) => (
+          {(overrideProps: Partial<React.ComponentProps<typeof SidebarItem>>) => (
             <SidebarItem
               {...sidebarItemProps}
               onClick={(_id, evt) =>
@@ -287,7 +287,7 @@ class Sidebar extends React.Component<Props, State> {
               label={<GuideAnchor target="performance">{t('Performance')}</GuideAnchor>}
               to={`/organizations/${organization.slug}/performance/`}
               id="performance"
-              {...overideProps}
+              {...overrideProps}
             />
           )}
         </SidebarOverride>
