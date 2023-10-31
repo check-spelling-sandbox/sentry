@@ -123,7 +123,7 @@ def session_ingest_consumer(scope_consumers, kafka_admin, task_runner):
     Note/Warning: Once an ingest consumer is created it will be reused by all tests in the session.
     The ingest consumer is created the first time with the provided settings and then reused.
     If you don't want this behaviour DO NOT USE this fixture (create a fixture, similar with this one,
-    that returns a new consumer at each invocation rather then reusing it)
+    that returns a new consumer at each invocation rather than reusing it)
 
     :return: a function factory that creates a consumer at first invocation and returns the cached consumer afterwards.
     """

@@ -634,7 +634,7 @@ def sources_for_symbolication(project):
         """Post-processes the JSON response.
 
         This modifies the candidates list from Symbolicator responses to undo aliased
-        sources, hide information about unknown sources and add names to sources rather then
+        sources, hide information about unknown sources and add names to sources rather than
         just have their IDs.
         """
         for module in json.get("modules") or ():
