@@ -85,7 +85,7 @@ const organizationNavigation: NavigationSection[] = [
         path: `${pathPrefix}/integrations/`,
         title: t('Integrations'),
         description: t(
-          'Manage organization-level integrations, including: Slack, Github, Bitbucket, Jira, and Azure DevOps'
+          'Manage organization-level integrations, including: Slack, GitHub, Bitbucket, Jira, and Azure DevOps'
         ),
         id: 'integrations',
         recordAnalytics: true,

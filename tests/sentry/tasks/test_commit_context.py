@@ -1329,7 +1329,7 @@ class TestGHCommentQueuing(IntegrationTestCase, TestCommitContextMixin):
     @patch("sentry_sdk.capture_exception")
     @responses.activate
     def test_gh_comment_api_error(self, mock_capture_exception, get_jwt, mock_comment_workflow):
-        """Captures exception if Github API call errors"""
+        """Captures exception if GitHub API call errors"""
 
         responses.add(
             responses.GET,

@@ -39,7 +39,7 @@ export function InviteBanner({
   allowedRoles,
   onModalClose,
 }: Props) {
-  // NOTE: this is currently used for Github only
+  // NOTE: this is currently used for GitHub only
 
   const isEligibleForBanner =
     organization.features.includes('integrations-gh-invite') &&
@@ -156,7 +156,7 @@ export function InviteBanner({
           onClick={() => handleSendInvite(member.email)}
           data-test-id="invite-missing-member"
           icon={<IconMail />}
-          analyticsEventName="Github Invite Banner: Invite"
+          analyticsEventName="GitHub Invite Banner: Invite"
           analyticsEventKey="github_invite_banner.invite"
         >
           {t('Invite')}
@@ -195,7 +195,7 @@ export function InviteBanner({
             priority="primary"
             size="xs"
             onClick={openInviteModal}
-            analyticsEventName="Github Invite Banner: View All"
+            analyticsEventName="GitHub Invite Banner: View All"
             analyticsEventKey="github_invite_banner.view_all"
           >
             {t('View All')}
@@ -246,7 +246,7 @@ function SeeMoreCard({missingMembers, openInviteModal}: SeeMoreCardProps) {
         size="sm"
         priority="primary"
         onClick={openInviteModal}
-        analyticsEventName="Github Invite Banner: View All"
+        analyticsEventName="GitHub Invite Banner: View All"
         analyticsEventKey="github_invite_banner.view_all"
       >
         {t('View All')}

@@ -17,7 +17,7 @@ class GithubSharedSearchEndpoint(IntegrationEndpoint):
     publish_status = {
         "GET": ApiPublishStatus.UNKNOWN,
     }
-    """NOTE: This endpoint is a shared search endpoint for Github and Github Enterprise integrations."""
+    """NOTE: This endpoint is a shared search endpoint for GitHub and GitHub Enterprise integrations."""
 
     def get(
         self, request: Request, organization: RpcOrganization, integration_id: int, **kwds: Any

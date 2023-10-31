@@ -955,7 +955,7 @@ _Plus 731 more_
 
 ### Derived code mappings (Internal Release) (ongoing)
 
-This milestones add support for creating Python code mappings automatically for orgs with the Github integration installed.
+This milestones add support for creating Python code mappings automatically for orgs with the GitHub integration installed.
 
 This milestone initially focuses on Python projects.
 
@@ -965,7 +965,7 @@ By: @snigdhas (#41147, #41036, #40882, #40973, #40934, #40881, #40717, #40528, #
 
 ### Derived code mappings (EA release - Python only) (ongoing)
 
-This adds the ability of deriving code mappings automatically for all orgs using Python and Github at first.
+This adds the ability of deriving code mappings automatically for all orgs using Python and GitHu
 
 See RFC for details: https://github.com/getsentry/rfcs/blob/main/text/0016-auto-code-mappings.md
 

@@ -54,7 +54,7 @@ class OrganizationMissingMembersTestCase(APITestCase):
         nonmember_commit_author_invalid_domain.save()
 
         self.integration = self.create_integration(
-            organization=self.organization, provider="github", name="Github", external_id="github:1"
+            organization=self.organization, provider="github", name="GitHub", external_id="github:1"
         )
         self.repo = self.create_repo(
             project=self.project, provider="integrations:github", integration_id=self.integration.id
@@ -140,7 +140,7 @@ class OrganizationMissingMembersTestCase(APITestCase):
         org = self.create_organization(owner=self.create_user())
         self.create_member(user=self.user, organization=org, role="manager")
         self.create_integration(
-            organization=org, provider="github", name="Github", external_id="github:2"
+            organization=org, provider="github", name="GitHub", external_id="github:2"
         )
 
         response = self.get_success_response(org.slug)
@@ -264,7 +264,7 @@ class OrganizationMissingMembersTestCase(APITestCase):
         integration = self.create_integration(
             organization=self.organization,
             provider="github",
-            name="Github",
+            name="GitHub",
             external_id="github:2",
             status=ObjectStatus.DISABLED,
         )

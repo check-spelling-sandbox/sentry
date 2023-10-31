@@ -25,7 +25,7 @@ import {normalizeUrl} from 'sentry/utils/withDomainRequired';
 import DeprecatedAsyncView from 'sentry/views/deprecatedAsyncView';
 import AddIntegration from 'sentry/views/settings/organizationIntegrations/addIntegration';
 
-// installationId present for Github flow
+// installationId present for GitHub flow
 type Props = RouteComponentProps<{integrationSlug: string; installationId?: string}, {}>;
 
 type State = DeprecatedAsyncView['state'] & {
@@ -133,7 +133,7 @@ export default class IntegrationOrganizationLink extends DeprecatedAsyncView<
     return organization?.access.includes('org:integrations');
   };
 
-  // used with Github to redirect to the the integration detail
+  // used with GitHub to redirect to the the integration detail
   onInstallWithInstallationId = (data: Integration) => {
     const {organization} = this.state;
     const orgId = organization && organization.slug;
@@ -145,7 +145,7 @@ export default class IntegrationOrganizationLink extends DeprecatedAsyncView<
     );
   };
 
-  // non-Github redirects to the extension view where the backend will finish the installation
+  // non-GitHub redirects to the extension view where the backend will finish the installation
   finishInstallation = () => {
     // add the selected org to the query parameters and then redirect back to configure
     const {selectedOrgSlug, organization} = this.state;
@@ -180,7 +180,7 @@ export default class IntegrationOrganizationLink extends DeprecatedAsyncView<
 
     const {IntegrationFeatures} = getIntegrationFeatureGate();
 
-    // Github uses a different installation flow with the installationId as a parameter
+    // GitHub uses a different installation flow with the installationId as a parameter
     // We have to wrap our installation button with AddIntegration so we can get the
     // addIntegrationWithInstallationId callback.
     // if we don't have an installationId, we need to use the finishInstallation callback.

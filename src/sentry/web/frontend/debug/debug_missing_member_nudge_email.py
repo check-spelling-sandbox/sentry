@@ -49,6 +49,6 @@ class DebugMissingMembersNudgeView(View):
                 "organization": self.organization,
                 "top_missing_members": commit_authors[0:3],
                 "members_list_url": "https://sentry.io/",
-                "provider": "Github",
+                "provider": "GitHub",
             },
         ).render(request)

@@ -37,7 +37,7 @@ class GitHubAppsClientTest(TestCase):
         integration = self.create_integration(
             organization=self.organization,
             provider="github_enterprise",
-            name="Github Test Org",
+            name="GitHub Test Org",
             external_id="1",
             metadata={
                 "access_token": None,

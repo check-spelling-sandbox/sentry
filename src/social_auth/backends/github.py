@@ -33,14 +33,14 @@ GITHUB_ORGANIZATION_MEMBER_OF_URL = "https://%s/orgs/{org}/members/{username}" %
 
 
 class GithubBackend(OAuthBackend):
-    """Github OAuth authentication backend"""
+    """GitHub OAuth authentication backend"""
 
     name = "github"
     # Default extra data to store
     EXTRA_DATA = [("id", "id"), ("expires", "expires")]
 
     def _fetch_emails(self, access_token):
-        """Fetch private emails from Github account"""
+        """Fetch private emails from GitHub account"""
         req = Request(
             GITHUB_USER_DATA_URL + "/emails", headers={"Authorization": "token %s" % access_token}
         )
@@ -52,7 +52,7 @@ class GithubBackend(OAuthBackend):
         return data
 
     def get_user_details(self, response):
-        """Return user details from Github account"""
+        """Return user details from GitHub account"""
         name = response.get("name") or ""
         details = {"username": response.get("login")}
 
@@ -75,7 +75,7 @@ class GithubBackend(OAuthBackend):
 
 
 class GithubAuth(BaseOAuth2):
-    """Github OAuth2 mechanism"""
+    """GitHub OAuth2 mechanism"""
 
     AUTHORIZATION_URL = GITHUB_AUTHORIZATION_URL
     ACCESS_TOKEN_URL = GITHUB_ACCESS_TOKEN_URL

@@ -187,7 +187,7 @@ export interface TeamMember extends Member {
 export interface MissingMember {
   commitCount: number;
   email: string;
-  // The user's ID in the repository provider (e.g. Github username)
+  // The user's ID in the repository provider (e.g. GitHub username)
   externalId: string;
 }
 

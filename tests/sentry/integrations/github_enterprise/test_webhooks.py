@@ -77,7 +77,7 @@ class WebhookTest(APITestCase):
 
     @patch("sentry.integrations.github_enterprise.webhook.get_installation_metadata")
     def test_missing_signature_ok(self, mock_installation):
-        # Old Github:e doesn't send a signature, so we have to accept that.
+        # Old GitHub:e doesn't send a signature, so we have to accept that.
         mock_installation.return_value = self.metadata
 
         response = self.client.post(

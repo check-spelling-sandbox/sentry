@@ -75,7 +75,7 @@ class InviteMissingMembersTestCase(TestCase):
     @with_feature("organizations:integrations-gh-invite")
     def test_schedules_and_sends(self, mock_send_email, mock_send_notification):
         integration = self.create_integration(
-            organization=self.organization, provider="github", name="Github", external_id="github:1"
+            organization=self.organization, provider="github", name="GitHub", external_id="github:1"
         )
         self.repo.integration_id = integration.id
         self.repo.save()
@@ -98,7 +98,7 @@ class InviteMissingMembersTestCase(TestCase):
         self, mock_init_notification, mock_send_email, mock_send_notification
     ):
         integration = self.create_integration(
-            organization=self.organization, provider="github", name="Github", external_id="github:1"
+            organization=self.organization, provider="github", name="GitHub", external_id="github:1"
         )
         self.repo.integration_id = integration.id
         self.repo.save()
@@ -154,7 +154,7 @@ class InviteMissingMembersTestCase(TestCase):
         )
 
         integration = self.create_integration(
-            organization=self.organization, provider="github", name="Github", external_id="github:1"
+            organization=self.organization, provider="github", name="GitHub", external_id="github:1"
         )
         self.repo.integration_id = integration.id
         self.repo.save()
@@ -170,7 +170,7 @@ class InviteMissingMembersTestCase(TestCase):
         self.create_repo(project=project, provider="github")
 
         self.create_integration(
-            organization=org, provider="github", name="Github", external_id="github:1"
+            organization=org, provider="github", name="GitHub", external_id="github:1"
         )
 
         send_nudge_email(org_id=org.id)

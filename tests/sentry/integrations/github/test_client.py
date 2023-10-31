@@ -41,7 +41,7 @@ class GitHubAppsClientTest(TestCase):
         integration = self.create_integration(
             organization=self.organization,
             provider="github",
-            name="Github Test Org",
+            name="GitHub Test Org",
             external_id="1",
             metadata={"access_token": None, "expires_at": None},
         )
@@ -678,7 +678,7 @@ class GithubProxyClientTest(TestCase):
             )
         assert len(mail.outbox) == 1
         msg = mail.outbox[0]
-        assert msg.subject == "Action required: re-authenticate or fix your Github integration"
+        assert msg.subject == "Action required: re-authenticate or fix your GitHub integration"
         assert (
             self.organization.absolute_url(
                 f"/settings/{self.organization.slug}/integrations/{self.integration.provider}"
@@ -805,7 +805,7 @@ class GitHubClientFileBlameBase(TestCase):
         integration = self.create_integration(
             organization=self.organization,
             provider="github",
-            name="Github Test Org",
+            name="GitHub Test Org",
             external_id="1",
             metadata={"access_token": None, "expires_at": None},
         )
