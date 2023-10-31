@@ -23,7 +23,7 @@ describe('KeyValueList', function () {
     expect(secondColumn[1]).toHaveTextContent('y');
   });
 
-  it('should sort sort key/value pairs', function () {
+  it('should sort key/value pairs', function () {
     const data = [
       {key: 'b', value: 'y', subject: 'b'},
       {key: 'a', value: 'x', subject: 'a'},
