@@ -358,7 +358,7 @@ describe('GroupActivity', function () {
       expect(deleteMock).not.toHaveBeenCalled();
     });
 
-    it('should remove remove the item from the GroupStore make a DELETE API request', async function () {
+    it('should remove the item from the GroupStore make a DELETE API request', async function () {
       createWrapper();
       renderGlobalModal();
 
