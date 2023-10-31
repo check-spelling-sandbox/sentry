@@ -870,7 +870,7 @@ class IssueListOverview extends Component<Props, State> {
       delete query.query;
 
       // If we aren't going to another page in the same search
-      // drop the query and replace the current project, with the saved search search project
+      // drop the query and replace the current project, with the saved search project
       // if available.
       if (!query.cursor && savedSearch.projectId) {
         query.project = [savedSearch.projectId];
