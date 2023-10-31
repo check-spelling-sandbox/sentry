@@ -161,7 +161,7 @@ class AmazonSQSPlugin(CorePluginMixin, DataForwardingPlugin):
                 send_message_args["MessageDeduplicationId"] = uuid4().hex
             return client.send_message(**send_message_args)
 
-        # wrap S3 put_object and and SQS send message in one try/except
+        # wrap S3 put_object and SQS send message in one try/except
         s3_bucket = self.get_option("s3_bucket", event.project)
         try:
             # if we have an S3 bucket, upload to S3

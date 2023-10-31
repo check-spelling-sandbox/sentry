@@ -194,7 +194,7 @@ class RedisQuota(Quota):
         if timestamp is None:
             timestamp = time()
 
-        # Relay supports separate rate limiting per data category and and can
+        # Relay supports separate rate limiting per data category and can
         # handle scopes explicitly. This function implements a simplified logic
         # that treats all events the same and ignores transaction rate limits.
         # Thus, we filter for (1) no categories, which implies this quota
