@@ -76,7 +76,7 @@ marked.setOptions({
   // [!!] This has the side effect of causing failed markdown content to render
   //      as a html error, instead of throwing an exception, however none of
   //      our tests are rendering failed markdown so this is likely a safe
-  //      tradeoff to turn off off the deprecation warning.
+  //      tradeoff to turn off the deprecation warning.
   silent: NODE_ENV === 'test',
 });
 
