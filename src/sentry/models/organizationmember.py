@@ -638,7 +638,7 @@ class OrganizationMember(ReplicatedRegionModel):
     def get_allowed_org_roles_to_invite(self):
         """
         Return a list of org-level roles which that member could invite
-        Must check if member member has member:admin first before checking
+        Must check if member has member:admin first before checking
         """
         member_scopes = self.get_scopes()
         return [r for r in organization_roles.get_all() if r.scopes.issubset(member_scopes)]
