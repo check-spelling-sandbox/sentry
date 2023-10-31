@@ -52,14 +52,14 @@ class SiloMode(Enum):
     ) -> Generator[None, None, None]:
         """
         Used by silo endpoint decorators and other contexts that help 'suggest' to acceptance testing and local
-        single process silo testing which 'silo context' the process should be running in.  Prevents re-entrant
+        single process silo testing which 'silo context' the process should be running in.  Prevents reentrant
         cases unless the exit_single_process_silo_context is explicitly embedded, ensuring that this single process
         silo mode simulates the boundaries explicitly between what would be separate processes in deployment.
         """
         if in_test_environment():
             assert (
                 single_process_silo_mode_state.mode is None
-            ), "Re-entrant invariant broken! Use exit_single_process_silo_context to explicit pass 'fake' RPC boundaries."
+            ), "Reentrant invariant broken! Use exit_single_process_silo_context to explicit pass 'fake' RPC boundaries."
         old_mode = single_process_silo_mode_state.mode
         old_region = single_process_silo_mode_state.region
         single_process_silo_mode_state.mode = mode
