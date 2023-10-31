@@ -7,7 +7,7 @@ IOS_APP_PATHS = (
     "/private/var/containers/Bundle/Application/",
 )
 
-# Locations which usually contain MacOS apps.
+# Locations which usually contain macOS apps.
 MACOS_APP_PATHS = (".app/Contents/", "/Users/", "/usr/local/")
 
 # Paths which usually contain linux system or third party libraries.
@@ -38,7 +38,7 @@ def is_known_third_party(package: str, os: Optional[str]) -> bool:
     locations across platforms. The given package must not be ``None``.
     """
 
-    # Check for common iOS and MacOS support frameworks, like Swift.
+    # Check for common iOS and macOS support frameworks, like Swift.
     if _is_support_framework(package):
         return True
 
