@@ -320,7 +320,7 @@ type State = {
   query: string;
   searchGroups: SearchGroup[];
   /**
-   * The current search term (or 'key') that that we will be showing
+   * The current search term (or 'key') that we will be showing
    * autocompletion for.
    */
   searchTerm: string;

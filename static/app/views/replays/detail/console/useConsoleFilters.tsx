@@ -68,7 +68,7 @@ function useConsoleFilters({frames}: Options): Return {
   const {setFilter, query} = useFiltersInLocationQuery<FilterFields>();
 
   // Keep a reference of object paths that are expanded (via <ObjectInspector>)
-  // by log row, so they they can be restored as the Console pane is scrolling.
+  // by log row, so that they can be restored as the Console pane is scrolling.
   // Due to virtualization, components can be unmounted as the user scrolls, so
   // state needs to be remembered.
   //

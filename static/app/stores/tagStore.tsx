@@ -153,7 +153,7 @@ const storeConfig: TagStoreDefinition = {
       },
     };
 
-    // Ony include fields that that are part of the ISSUE_FIELDS. This is
+    // Ony include fields that are part of the ISSUE_FIELDS. This is
     // because we may sometimes have fields that are turned off by removing
     // them from ISSUE_FIELDS
     const filteredCollection = Object.entries(tagCollection).filter(([key]) =>
