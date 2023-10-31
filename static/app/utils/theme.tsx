@@ -278,7 +278,7 @@ const generateAliases = (colors: BaseColors) => ({
   warningFocus: colors.yellow200,
 
   /**
-   * A color that indicates something is disabled where user can not interact or use
+   * A color that indicates something is disabled where user cannot interact or use
    * it in the usual manner (implies that there is an "enabled" state)
    */
   disabled: colors.gray300,

@@ -66,7 +66,7 @@ class AppStoreConnectConfig:
 
     # The name of the symbol source.
     #
-    # Currently users can not chose this name, but it has a name anyway.
+    # Currently users cannot chose this name, but it has a name anyway.
     name: str
 
     # Issuer ID for the API credentials.

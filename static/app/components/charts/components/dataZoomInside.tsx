@@ -4,7 +4,7 @@ import type {InsideDataZoomComponentOption} from 'echarts';
 
 const DEFAULT: InsideDataZoomComponentOption = {
   type: 'inside',
-  // Mouse wheel can not trigger zoom
+  // Mouse wheel cannot trigger zoom
   zoomOnMouseWheel: false,
   // The translation (by mouse drag or touch drag) is available but zoom is not
   zoomLock: true,

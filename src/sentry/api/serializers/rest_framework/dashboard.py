@@ -326,7 +326,7 @@ class DashboardWidgetSerializer(CamelSnakeSerializer):
                     if max_values.get(max_key):
                         if max_values.get(max_key) < 0:
                             raise serializers.ValidationError(
-                                {"thresholds": {max_key: "Maximum values can not be negative"}}
+                                {"thresholds": {max_key: "Maximum values cannot be negative"}}
                             )
                         elif i > 0:
                             prev_max_key = f"max{i}"

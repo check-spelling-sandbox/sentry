@@ -299,7 +299,7 @@ class SlackIntegrationUnlinkTeamTest(SlackIntegrationLinkTeamTestBase):
 
     @responses.activate
     def test_unlink_team_with_member_role_through_team(self):
-        """Test that a team can not be unlinked from a Slack channel with a member role"""
+        """Test that a team cannot be unlinked from a Slack channel with a member role"""
         self._create_user_with_member_role_through_team()
 
         self.get_error_response(status_code=status.HTTP_404_NOT_FOUND)

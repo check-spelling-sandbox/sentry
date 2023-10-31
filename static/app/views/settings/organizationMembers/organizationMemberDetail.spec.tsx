@@ -368,7 +368,7 @@ describe('OrganizationMemberDetail', function () {
       });
     });
 
-    it('can not change roles, teams, or save', function () {
+    it('cannot change roles, teams, or save', function () {
       const {routerContext, routerProps} = initializeOrg({organization});
 
       render(

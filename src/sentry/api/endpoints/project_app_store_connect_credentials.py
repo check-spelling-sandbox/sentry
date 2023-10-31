@@ -370,7 +370,7 @@ class AppStoreConnectRefreshEndpoint(ProjectEndpoint):
     enforce_rate_limit = True
 
     # At the time of writing the App Store Connect API has a rate limit of 3600 requests/h
-    # per project.  We can not set per-project rate limits unfortunately.
+    # per project.  We cannot set per-project rate limits unfortunately.
     rate_limits = RateLimitConfig(
         group="appconnect-refresh",
         limit_overrides={

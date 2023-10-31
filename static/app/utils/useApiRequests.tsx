@@ -353,7 +353,7 @@ function useApiRequests<T extends Record<string, any>>({
       const unauthorizedErrors = Object.values(errors).some(resp => resp?.status === 401);
 
       // Look through endpoint results to see if we had any 403s, means their
-      // role can not access resource
+      // role cannot access resource
       const permissionErrors = Object.values(errors).some(resp => resp?.status === 403);
 
       // If all error responses have status code === 0, then show error message

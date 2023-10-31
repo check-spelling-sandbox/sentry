@@ -112,7 +112,7 @@ class Provider(PipelineProvider, abc.ABC):
         The provider is trustable and the email address is verified by the provider,
         the ``email_verified`` attribute should be set to ``True``.
 
-        If the identity can not be constructed an ``IdentityNotValid`` error
+        If the identity cannot be constructed an ``IdentityNotValid`` error
         should be raised.
         """
         raise NotImplementedError

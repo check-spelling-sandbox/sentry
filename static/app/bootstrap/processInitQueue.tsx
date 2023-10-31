@@ -73,7 +73,7 @@ async function processItem(initConfig: OnSentryInitConfiguration) {
  * This allows server templates to push "tasks" to be run after application has initialized.
  * The global `window.__onSentryInit` is used for this.
  *
- * Be careful here as we can not guarantee type safety on `__onSentryInit` as
+ * Be careful here as we cannot guarantee type safety on `__onSentryInit` as
  * these will be defined in server rendered templates
  */
 export async function processInitQueue() {

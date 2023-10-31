@@ -220,7 +220,7 @@ class ProjectPerformanceIssueSettingsTest(APITestCase):
             )
 
         assert response.status_code == 403, response.content
-        assert response.data == {"detail": "Disabled options can not be modified"}
+        assert response.data == {"detail": "Disabled options cannot be modified"}
 
         with self.feature(PERFORMANCE_ISSUE_FEATURES):
             get_response = self.client.get(self.url, format="json")

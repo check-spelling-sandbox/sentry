@@ -185,7 +185,7 @@ describe('AccountSecurity', function () {
     expect(deleteMock).toHaveBeenCalled();
   });
 
-  it('can not remove last 2fa method when org requires 2fa', async function () {
+  it('cannot remove last 2fa method when org requires 2fa', async function () {
     MockApiClient.addMockResponse({
       url: ENDPOINT,
       body: [

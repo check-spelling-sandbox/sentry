@@ -30,7 +30,7 @@ describe('ProjectPluginRow', function () {
     expect(onChange).toHaveBeenCalledWith('amazon-sqs', true);
   });
 
-  it('can not enable/disable or configure plugin without `project:write`', async function () {
+  it('cannot enable/disable or configure plugin without `project:write`', async function () {
     const onChange = jest.fn();
 
     render(

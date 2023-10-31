@@ -89,7 +89,7 @@ function Device(props) {
             <Button size="sm" priority="danger">
               <Tooltip
                 disabled={!isLastDevice}
-                title={t('Can not remove last U2F device')}
+                title={t('Cannot remove last U2F device')}
               >
                 <IconDelete size="xs" />
               </Tooltip>

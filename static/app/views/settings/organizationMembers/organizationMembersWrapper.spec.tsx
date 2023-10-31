@@ -67,7 +67,7 @@ describe('OrganizationMembersWrapper', function () {
     expect(openInviteMembersModal).toHaveBeenCalled();
   });
 
-  it('can not invite members without the invite-members feature', function () {
+  it('cannot invite members without the invite-members feature', function () {
     const org = Organization({
       features: [],
       access: ['member:admin', 'org:admin', 'member:write'],

@@ -34,7 +34,7 @@ class Provider(PipelineProvider, abc.ABC):
         the id key be migrating from one value to another and have multiple
         lookup values.
 
-        If the identity can not be constructed an ``IdentityNotValid`` error
+        If the identity cannot be constructed an ``IdentityNotValid`` error
         should be raised.
         """
         raise NotImplementedError

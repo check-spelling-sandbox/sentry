@@ -293,7 +293,7 @@ class OrganizationReplayIndexTest(APITestCase, ReplaysSnubaTestCase):
             assert "id" in response_data["data"][0]
 
     def test_get_replays_filter_environment(self):
-        """Test returned replays can not partially fall outside of range."""
+        """Test returned replays cannot partially fall outside of range."""
         project = self.create_project(teams=[self.team])
 
         self.create_environment(name="development", project=self.project)

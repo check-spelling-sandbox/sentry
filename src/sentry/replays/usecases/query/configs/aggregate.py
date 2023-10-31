@@ -1,7 +1,7 @@
 """Aggregate query filtering configuration module.
 
 Every field present in the configuration is filterable.  If its not in the configuration then the
-user can not filter by it.
+user cannot filter by it.
 
 Fields must point to the correct data source.  If they do not then the query will be wrong.
 

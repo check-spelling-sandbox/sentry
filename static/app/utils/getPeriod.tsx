@@ -40,7 +40,7 @@ export function getPeriod(
     period = DEFAULT_STATS_PERIOD;
   }
 
-  // you can not specify both relative and absolute periods
+  // you cannot specify both relative and absolute periods
   // relative period takes precedence
   if (period) {
     if (!shouldDoublePeriod) {

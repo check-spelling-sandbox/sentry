@@ -79,7 +79,7 @@ def validate_channel_id(
                     "code": e.code,
                 },
             )
-            raise ValidationError("Discord channel can not be found.")
+            raise ValidationError("Discord channel cannot be found.")
         else:
             logger.info(
                 "rule.discord.channel_integration_failed",

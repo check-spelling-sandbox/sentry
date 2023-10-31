@@ -407,7 +407,7 @@ class DeprecatedAsyncComponent<
     // 401s are captured by SudoModal, but may be passed back to AsyncComponent if they close the modal without identifying
     const unauthorizedErrors = Object.values(errors).find(resp => resp?.status === 401);
 
-    // Look through endpoint results to see if we had any 403s, means their role can not access resource
+    // Look through endpoint results to see if we had any 403s, means their role cannot access resource
     const permissionErrors = Object.values(errors).find(resp => resp?.status === 403);
 
     // If all error responses have status code === 0, then show error message but don't

@@ -252,7 +252,7 @@ class ProjectPerformanceIssueSettingsEndpoint(ProjectEndpoint):
         )
         if payload_contains_disabled_threshold_setting:
             return Response(
-                {"detail": "Disabled options can not be modified"},
+                {"detail": "Disabled options cannot be modified"},
                 status=status.HTTP_403_FORBIDDEN,
             )
 
@@ -284,7 +284,7 @@ class ProjectPerformanceIssueSettingsEndpoint(ProjectEndpoint):
 
         if project_settings:
             unchanged_options = (
-                {  # internal settings and disabled threshold settings can not be reset
+                {  # internal settings and disabled threshold settings cannot be reset
                     option: project_settings[option]
                     for option in project_settings
                     if option in internal_only_settings or option in disabled_options

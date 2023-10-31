@@ -53,7 +53,7 @@ def decode(
 ) -> dict[str, JSONData]:
     """Returns the claims (payload) in the JWT token.
 
-    This will raise an exception if the claims can not be validated with the provided key.
+    This will raise an exception if the claims cannot be validated with the provided key.
 
     :param token: The JWT token to decode.
     :param key: The key as bytes.  Depending on the algorithm this can have several formats,
@@ -75,7 +75,7 @@ def decode(
     if audience is False:
         options["verify_aud"] = False
     elif audience is True:
-        raise ValueError("audience can not be True")
+        raise ValueError("audience cannot be True")
     elif audience is not None:
         kwargs["audience"] = audience
     if algorithms is None:

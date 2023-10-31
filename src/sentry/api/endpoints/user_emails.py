@@ -217,7 +217,7 @@ class UserEmailsEndpoint(UserEndpoint):
         Removes an email from account
         `````````````````````````````
 
-        Removes an email from account, can not remove primary email
+        Removes an email from account, cannot remove primary email
 
         :param string email: email to remove
         :auth required:

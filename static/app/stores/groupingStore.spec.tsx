@@ -495,7 +495,7 @@ describe('Grouping Store', function () {
     // add a beforeEach(() => GroupingStore.init())
     describe('onToggleUnmerge (checkbox state for hashes)', function () {
       // Attempt to check first item but its "locked" so should not be able to do anything
-      it('can not check locked item', function () {
+      it('cannot check locked item', function () {
         GroupingStore.onToggleUnmerge('1');
 
         expect(GroupingStore.getState().unmergeList).toEqual(unmergeList);
@@ -594,7 +594,7 @@ describe('Grouping Store', function () {
         });
       });
 
-      it('can not toggle unmerge for a locked item', function () {
+      it('cannot toggle unmerge for a locked item', function () {
         // Event 1 is locked
         GroupingStore.onToggleUnmerge(['1', 'event-1']);
         unmergeState.set('1', {busy: true});

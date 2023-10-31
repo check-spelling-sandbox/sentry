@@ -232,7 +232,7 @@ describe('OrganizationMemberRow', function () {
       expect(removeButton()).not.toBeInTheDocument();
     });
 
-    it('has disabled button to leave organization and no button to remove when member can not leave', function () {
+    it('has disabled button to leave organization and no button to remove when member cannot leave', function () {
       render(<OrganizationMemberRow {...props} memberCanLeave={false} />);
 
       expect(leaveButton()).toBeDisabled();

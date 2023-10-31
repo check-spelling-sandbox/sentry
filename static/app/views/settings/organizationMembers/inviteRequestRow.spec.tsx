@@ -145,7 +145,7 @@ describe('InviteRequestRow', function () {
     expect(mockApprove).not.toHaveBeenCalled();
   });
 
-  it('non-admin can not approve or deny invite request', function () {
+  it('non-admin cannot approve or deny invite request', function () {
     render(
       <InviteRequestRow
         organization={orgWithoutAdminAccess}
