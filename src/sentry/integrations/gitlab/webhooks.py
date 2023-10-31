@@ -301,7 +301,7 @@ class GitlabWebhookEndpoint(Endpoint, GitlabWebhookMixin):
             logger.info("gitlab.webhook.invalid-token-secret", extra=extra)
             extra[
                 "reason"
-            ] = "Gitlab's webhook secret does not match. Refresh token (or re-install the integration) by following this https://docs.sentry.io/product/integrations/integration-platform/public-integration/#refreshing-tokens."
+            ] = "GitLab's webhook secret does not match. Refresh token (or re-install the integration) by following this https://docs.sentry.io/product/integrations/integration-platform/public-integration/#refreshing-tokens."
             logger.exception(extra["reason"])
             return HttpResponse(status=400, reason=extra["reason"])
 
@@ -321,7 +321,7 @@ class GitlabWebhookEndpoint(Endpoint, GitlabWebhookMixin):
             logger.info(f"We only support these kinds of events: {supported_events}")
             extra[
                 "reason"
-            ] = "The customer has edited the webhook in Gitlab to include other types of events."
+            ] = "The customer has edited the webhook in GitLab to include other types of events."
             logger.exception(extra["reason"])
             return HttpResponse(status=400, reason=extra["reason"])
 

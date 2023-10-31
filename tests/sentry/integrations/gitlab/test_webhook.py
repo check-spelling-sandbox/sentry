@@ -66,7 +66,7 @@ class WebhookTest(GitLabTestCase):
         assert response.status_code == 400
         assert (
             response.reason_phrase
-            == "The customer has edited the webhook in Gitlab to include other types of events."
+            == "The customer has edited the webhook in GitLab to include other types of events."
         )
 
     def test_invalid_token(self):
@@ -91,7 +91,7 @@ class WebhookTest(GitLabTestCase):
         assert response.status_code == 400
         assert (
             response.reason_phrase
-            == "Gitlab's webhook secret does not match. Refresh token (or re-install the integration) by following this https://docs.sentry.io/product/integrations/integration-platform/public-integration/#refreshing-tokens."
+            == "GitLab's webhook secret does not match. Refresh token (or re-install the integration) by following this https://docs.sentry.io/product/integrations/integration-platform/public-integration/#refreshing-tokens."
         )
 
     def test_invalid_payload(self):

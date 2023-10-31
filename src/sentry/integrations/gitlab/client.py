@@ -310,7 +310,7 @@ class GitLabProxyApiClient(IntegrationProxyClient):
     def get_last_commits(self, project_id, end_sha):
         """Get the last set of commits ending at end_sha
 
-        Gitlab doesn't give us a good way to do this, so we fetch the end_sha
+        GitLab doesn't give us a good way to do this, so we fetch the end_sha
         and use its date to find the block of commits. We only fetch one page
         of commits to match other implementations (github, bitbucket)
 

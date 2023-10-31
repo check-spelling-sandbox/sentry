@@ -20,7 +20,7 @@ class GitLabTestCase(APITestCase):
         with assume_test_silo_mode(SiloMode.CONTROL):
             self.integration = Integration.objects.create(
                 provider=self.provider,
-                name="Example Gitlab",
+                name="Example GitLab",
                 external_id=EXTERNAL_ID,
                 metadata={
                     "instance": "example.gitlab.com",
