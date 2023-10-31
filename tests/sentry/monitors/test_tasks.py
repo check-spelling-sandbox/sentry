@@ -435,7 +435,7 @@ class MonitorTaskCheckMissingTest(TestCase):
         )
 
         # MonitorEnvironment is updated with the next_checkin correctly being
-        # computed from the most most recent check-in that should have happened
+        # computed from the most recent check-in that should have happened
         monitor_environment.refresh_from_db()
         assert monitor_environment.next_checkin == ts + timedelta(minutes=3)
 
