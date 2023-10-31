@@ -211,7 +211,7 @@ describe('useInitialTimeOffsetMs', () => {
       });
     });
 
-    it('should not call call fetch twice when props change', async () => {
+    it('should not call fetch twice when props change', async () => {
       mockQuery({query: 'click.tag:button'});
       MockFetchReplayClicks.mockResolvedValue({
         fetchError: undefined,
