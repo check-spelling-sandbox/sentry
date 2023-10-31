@@ -156,7 +156,7 @@ class BasePaginator:
         # We need to actually fetch the before row so that we can compare it to the
         # cursor value. This allows us to handle an edge case where the first row
         # for a given cursor is the same row that generated the cursor on the
-        # previous page, but we want to display since it has had its its sort value
+        # previous page, but we want to display since it has had its sort value
         # updated.
         if cursor.is_prev and cursor.value:
             extra += 1
