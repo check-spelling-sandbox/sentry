@@ -401,7 +401,7 @@ export const getStateToPutForParent = (
 };
 
 /**
- * Render each parent and add a default option to the the field choices.
+ * Render each parent and add a default option to the field choices.
  */
 export const getParentField = (
   notificationType: string,
