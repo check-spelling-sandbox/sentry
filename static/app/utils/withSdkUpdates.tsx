@@ -63,7 +63,7 @@ function withSdkUpdates<P extends InjectedProps>(
     }
 
     render() {
-      // TODO(ts) This unknown cast isn't great but Typescript complains about arbitrary
+      // TODO(ts) This unknown cast isn't great but TypeScript complains about arbitrary
       // types being possible. I think this is related to the additional HoC wrappers causing type data to
       // be lost.
       return (

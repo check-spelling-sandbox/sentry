@@ -160,7 +160,7 @@ function isSearchGroup(searchItem: SearchItem | SearchGroup): searchItem is Sear
 }
 
 function isSearchGroupArray(items: SearchItem[] | SearchGroup[]): items is SearchGroup[] {
-  // Typescript doesn't like that there's no shared properties between SearchItem and SearchGroup
+  // TypeScript doesn't like that there's no shared properties between SearchItem and SearchGroup
   return (items as any[]).every(isSearchGroup);
 }
 
