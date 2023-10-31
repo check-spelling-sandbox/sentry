@@ -44,7 +44,7 @@ def _scan_for_suspect_projects() -> None:
         suspect_projects.add(project_id)
         update_lpq_eligibility.delay(project_id=project_id)
 
-    # Prune projects we definitely know shouldn't be in the queue any more.
+    # Prune projects we definitely know shouldn't be in the queue anymore.
     # `update_lpq_eligibility` should handle removing suspect projects from the list if it turns
     # out they need to be evicted.
     current_lpq_projects = realtime_metrics.get_lpq_projects() or set()

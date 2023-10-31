@@ -4,7 +4,7 @@
 # the codebase we want to phase out, this module only acts as a legacy shim at
 # this point.
 
-# New code should not use this module any more.  It will be removed in a future
+# New code should not use this module anymore.  It will be removed in a future
 # after migrations and models were changed to no longer reference it.
 
 
