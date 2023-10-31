@@ -1284,7 +1284,7 @@ _Plus 605 more_
 - ref(new-widget-builder-experience): Add visualization & query fields  (#31786) by @priscilawebdev
 - feat(profiling): add flamegraph tooltip (#31663) by @JonasBa
 - ref(endpoints): SentryApp endpoints module (#31749) by @mgaeta
-- feat(ui): Add empty state for for review tab (#31782) by @taylangocmen
+- feat(ui): Add empty state for review tab (#31782) by @taylangocmen
 - ref(models): Move more models to submodules (#31583) by @mgaeta
 - Select weekly email template based on feature flag (#31802) by @Neo-Zhixing
 - feat(workflow): Add alert-rule-status-page flag (#31796) by @scttcper
