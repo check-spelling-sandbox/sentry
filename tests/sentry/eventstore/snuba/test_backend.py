@@ -166,7 +166,7 @@ class SnubaEventStorageTest(TestCase, SnubaTestCase, PerformanceIssueTestCase):
         assert event.project_id == self.project1.id
         assert event.group_id == event.group.id
 
-        # Get non existent event
+        # Get nonexistent event
         event = self.eventstore.get_event_by_id(self.project2.id, "z" * 32)
         assert event is None
 

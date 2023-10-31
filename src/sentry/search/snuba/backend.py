@@ -151,7 +151,7 @@ def first_release_all_environments_filter(
             # raise a validation here an inform the user that they passed an invalid
             # release
             releases[None] = -1
-            # We only need to find the first non-existent release here
+            # We only need to find the first nonexistent release here
             break
 
     return Q(

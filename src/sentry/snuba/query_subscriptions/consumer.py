@@ -126,7 +126,7 @@ def handle_message(
                 else:
                     logger.error(
                         "Topic not registered with QuerySubscriptionConsumer, can't remove "
-                        "non-existent subscription from Snuba",
+                        "nonexistent subscription from Snuba",
                         extra={"topic": topic, "subscription_id": contents["subscription_id"]},
                     )
             except InvalidMessageError as e:

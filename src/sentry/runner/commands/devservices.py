@@ -530,7 +530,7 @@ Are you sure you want to continue?"""
                 container = docker_client.containers.get(container_options["name"])
             except NotFound:
                 click.secho(
-                    "> WARNING: non-existent container '%s'" % container_options["name"],
+                    "> WARNING: nonexistent container '%s'" % container_options["name"],
                     err=True,
                     fg="yellow",
                 )

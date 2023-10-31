@@ -104,7 +104,7 @@ def test_replicate_auth_provider():
     serialized = serialize_auth_provider(auth_provider)
     serialized.organization_id = 99999
 
-    # Should still succeed despite non existent organization
+    # Should still succeed despite nonexistent organization
     region_replica_service.upsert_replicated_auth_provider(
         auth_provider=serialized, region_name="us"
     )

@@ -228,7 +228,7 @@ class End2EndTest(APITestCase):
         self.create_organization(name="albertos-apples")
 
         with override_settings(MIDDLEWARE=tuple(self.middleware)):
-            # Induce activeorg session value of a non-existent org
+            # Induce activeorg session value of a nonexistent org
             assert "activeorg" not in self.client.session
             response = self.client.post(
                 reverse("org-events-endpoint", kwargs={"organization_slug": "test"})
@@ -272,7 +272,7 @@ class End2EndTest(APITestCase):
         self.create_organization(name="albertos-apples")
 
         with override_settings(MIDDLEWARE=tuple(self.middleware)):
-            # Induce activeorg session value of a non-existent org
+            # Induce activeorg session value of a nonexistent org
             assert "activeorg" not in self.client.session
             response = self.client.post(
                 reverse("org-events-endpoint", kwargs={"organization_slug": "test"})
@@ -413,7 +413,7 @@ class End2EndTest(APITestCase):
         if "sentry.middleware.customer_domain.CustomerDomainMiddleware" in middleware:
             middleware.remove("sentry.middleware.customer_domain.CustomerDomainMiddleware")
         with override_settings(MIDDLEWARE=tuple(middleware)):
-            # Induce activeorg session value of a non-existent org
+            # Induce activeorg session value of a nonexistent org
             assert "activeorg" not in self.client.session
             response = self.client.post(
                 reverse("org-events-endpoint", kwargs={"organization_slug": "test"})

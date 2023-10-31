@@ -303,10 +303,10 @@ class SuperUserPostSentryAppsTest(SentryAppsTest):
         self.create_project(organization=self.super_org)
         sentry_app = self.create_internal_integration(name="Foo Bar")
 
-        data = self.get_data(name=sentry_app.name, organization="some-non-existent-org")
+        data = self.get_data(name=sentry_app.name, organization="some-nonexistent-org")
         response = self.get_error_response(**data, status_code=400)
         assert response.data == {
-            "organization": "Organization 'some-non-existent-org' does not exist.",
+            "organization": "Organization 'some-nonexistent-org' does not exist.",
         }
 
     def test_superuser_can_create_with_popularity(self):
@@ -358,7 +358,7 @@ class PostWithTokenSentryAppsTest(SentryAppsTest):
         self.assert_no_permission(
             organization=self.organization,
             sentry_app=self.internal_app,
-            slug="some-non-existent-org",
+            slug="some-nonexistent-org",
         )
 
 
@@ -432,7 +432,7 @@ class PostSentryAppsTest(SentryAppsTest):
         self.create_project(organization=self.organization)
         sentry_app = self.create_internal_integration(name="Foo Bar")
 
-        data = self.get_data(name=sentry_app.name, organization="some-non-existent-org")
+        data = self.get_data(name=sentry_app.name, organization="some-nonexistent-org")
         response = self.get_error_response(**data, status_code=403)
         assert response.data["detail"].startswith("User does not belong to")
 
