@@ -187,7 +187,7 @@ describe('SelectedGroupStore', function () {
   });
 
   describe('toggleSelect()', function () {
-    it('toggles state given pre-existing id', function () {
+    it('toggles state given preexisting id', function () {
       SelectedGroupStore.records = makeRecords({1: true});
       SelectedGroupStore.toggleSelect('1');
       expect(SelectedGroupStore.records.get('1')).toBe(false);
@@ -199,7 +199,7 @@ describe('SelectedGroupStore', function () {
       expect([...SelectedGroupStore.records.entries()]).toEqual([]);
     });
 
-    it('triggers an update given pre-existing id', function () {
+    it('triggers an update given preexisting id', function () {
       SelectedGroupStore.records = makeRecords({1: true});
       SelectedGroupStore.toggleSelect('1');
       expect(trigger).toHaveBeenCalled();

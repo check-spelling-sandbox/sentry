@@ -2066,7 +2066,7 @@ v8.15
 - Added deploy email
 - Added OAuth2 support to the web API.
 - Simplified management of secondary email addresses.
-- Fixed an issue where changing primary email address would remove the pre-existing verified email.
+- Fixed an issue where changing primary email address would remove the preexisting verified email.
 - Disallow duplicating primary emails for users moving forward.
 - Resolve issues when commits with ``Fixes SHORTID`` are included in releases
 - Added support for associating debug symbols with iTunes applications and builds.

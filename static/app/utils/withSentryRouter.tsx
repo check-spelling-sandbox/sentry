@@ -8,7 +8,7 @@ import {customerDomain, usingCustomerDomain} from 'sentry/constants';
  * domain as the orgId parameter. This only happens if a customer domain is currently being used.
  *
  * Since withRouter() is discouraged from being used on new React components, we would use withSentryRouter() on
- * pre-existing React components.
+ * preexisting React components.
  */
 function withSentryRouter<P extends WithRouterProps>(
   WrappedComponent: React.ComponentType<P>

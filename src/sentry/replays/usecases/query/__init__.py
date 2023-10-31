@@ -1,7 +1,7 @@
 """Query use-case module.
 
 For now, this is the search and sort entry-point.  Some of this code may be moved to
-replays/query.py when the pre-existing query module is deprecated.
+replays/query.py when the preexisting query module is deprecated.
 
 There are two important functions in this module: "search_filter_to_condition" and
 "query_using_optimized_search".  "search_filter_to_condition" is responsible for transforming a
