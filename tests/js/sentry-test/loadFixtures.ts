@@ -32,7 +32,7 @@ export function loadFixtures(dir: string, opts: Options = {}): TestStubFixtures 
       const module = require(filePath);
 
       if (module.default) {
-        throw new Error('Javascript fixtures cannot use default export');
+        throw new Error('JavaScript fixtures cannot use default export');
       }
 
       fixtures[file] = module;

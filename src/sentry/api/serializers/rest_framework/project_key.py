@@ -26,7 +26,7 @@ class RateLimitSerializer(serializers.Serializer):
 
 class DynamicSdkLoaderOptionSerializer(serializers.Serializer):
     """
-    Configures multiple options for the Javascript Loader Script.
+    Configures multiple options for the JavaScript Loader Script.
     - `Performance Monitoring`
     - `Debug Bundles & Logging`
     - `Session Replay` - Note that the loader will load the ES6 bundle instead of the ES5 bundle.

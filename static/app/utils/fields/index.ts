@@ -432,7 +432,7 @@ export const MEASUREMENT_FIELDS: Record<WebVital | MobileVital, FieldDefinition>
     valueType: FieldValueType.PERCENTAGE,
   },
   [MobileVital.STALL_COUNT]: {
-    desc: t('Count of slow Javascript event loops (React Native)'),
+    desc: t('Count of slow JavaScript event loops (React Native)'),
     kind: FieldKind.METRICS,
     valueType: FieldValueType.INTEGER,
   },
@@ -442,7 +442,7 @@ export const MEASUREMENT_FIELDS: Record<WebVital | MobileVital, FieldDefinition>
     valueType: FieldValueType.PERCENTAGE,
   },
   [MobileVital.STALL_LONGEST_TIME]: {
-    desc: t('Duration of slowest Javascript event loop (React Native)'),
+    desc: t('Duration of slowest JavaScript event loop (React Native)'),
     kind: FieldKind.METRICS,
     valueType: FieldValueType.INTEGER,
   },

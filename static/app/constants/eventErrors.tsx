@@ -1,4 +1,4 @@
-export enum JavascriptProcessingErrors {
+export enum JavaScriptProcessingErrors {
   JS_GENERIC_FETCH_ERROR = 'js_generic_fetch_error',
   JS_INVALID_HTTP_CODE = 'js_invalid_http_code',
   JS_INVALID_CONTENT = 'js_invalid_content',

@@ -134,7 +134,7 @@ function getTermDescriptions(platform: PlatformKey | null) {
         [SessionTerm.CRASHED]: t(
           'During the session an unhandled global error/promise rejection occurred.'
         ),
-        [SessionTerm.ABNORMAL]: t('Non applicable for Javascript.'),
+        [SessionTerm.ABNORMAL]: t('Non applicable for JavaScript.'),
         [SessionTerm.HEALTHY]: t('No errors were captured during session life-time.'),
         [SessionTerm.ERRORED]: t(
           'During the session at least one handled error occurred.'

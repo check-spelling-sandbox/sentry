@@ -258,7 +258,7 @@ export function eventIsSymbolicated(event: Event) {
   }
 
   // if none of the frames have symbolicatorStatus defined, most likely the event does not
-  // go through symbolicator and it's Java/Android/Javascript or something alike, so we fallback
+  // go through symbolicator and it's Java/Android/JavaScript or something alike, so we fallback
   // to the rawStacktrace presence
   return event.entries?.some(entry => {
     return (

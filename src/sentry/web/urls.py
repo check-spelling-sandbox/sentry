@@ -125,7 +125,7 @@ urlpatterns += [
         generic.static_media,
         name="sentry-media",
     ),
-    # Javascript SDK Loader
+    # JavaScript SDK Loader
     re_path(
         r"^js-sdk-loader/(?P<public_key>[^/\.]+)(?:(?P<minified>\.min))?\.js$",
         JavaScriptSdkLoader.as_view(),

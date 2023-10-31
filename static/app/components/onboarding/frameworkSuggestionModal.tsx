@@ -96,7 +96,7 @@ const topJavaFrameworks = [
 export const languageDetails = {
   [SupportedLanguages.JAVASCRIPT]: {
     description: t(
-      'Our JavaScript framework SDKs include all the features of our Browser Javascript SDK with additional features specific to that framework'
+      'Our JavaScript framework SDKs include all the features of our Browser JavaScript SDK with additional features specific to that framework'
     ),
     topFrameworksImage: onboardingFrameworkSelectionJavascript,
   },

@@ -224,7 +224,7 @@ export const steps = ({
         )}
         <p>
           {tct(
-            "Complete stack traces will be shown for React Native Javascript errors by default using Sentry's [automaticSourceMapsUploadLink:automatic source maps upload]. To set up manual source maps upload follow [guideLink:this guide].",
+            "Complete stack traces will be shown for React Native JavaScript errors by default using Sentry's [automaticSourceMapsUploadLink:automatic source maps upload]. To set up manual source maps upload follow [guideLink:this guide].",
             {
               automaticSourceMapsUploadLink: (
                 <ExternalLink href="https://docs.sentry.io/platforms/react-native/sourcemaps/" />
@@ -262,7 +262,7 @@ export const steps = ({
         </p>
         <p>
           {tct(
-            'Source Context will be shown for React Native Javascript error by default if source maps are uploaded. To set up source maps upload, follow the [sourceMapsGuideLink:Source Maps guide].',
+            'Source Context will be shown for React Native JavaScript error by default if source maps are uploaded. To set up source maps upload, follow the [sourceMapsGuideLink:Source Maps guide].',
             {
               sourceMapsGuideLink: (
                 <ExternalLink href="https://docs.sentry.io/platforms/react-native/sourcemaps/" />

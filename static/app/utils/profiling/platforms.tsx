@@ -43,7 +43,7 @@ export function getDocsPlatformSDKForPlatform(
     return 'go';
   }
 
-  // Javascript
+  // JavaScript
   if (platform.startsWith('node')) {
     return 'node';
   }

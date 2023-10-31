@@ -85,7 +85,7 @@ class ProjectKeyDetailsEndpoint(ProjectEndpoint):
                     required=False,
                 ),
                 "browserSdkVersion": serializers.ChoiceField(
-                    help_text="The Sentry Javascript SDK version to use. The currently supported options are:",
+                    help_text="The Sentry JavaScript SDK version to use. The currently supported options are:",
                     # Ideally we would call get_browser_sdk_version_choices() here but that requires
                     # passing in project to this decorator
                     choices=[("latest", "Most recent version"), ("7.x", "Version 7 releases")],

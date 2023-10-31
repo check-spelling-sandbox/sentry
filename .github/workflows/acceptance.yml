@@ -80,7 +80,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock', 'api-docs/yarn.lock') }}
 
-      - name: Install Javascript Dependencies
+      - name: Install JavaScript Dependencies
         if: steps.nodemodulescache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 

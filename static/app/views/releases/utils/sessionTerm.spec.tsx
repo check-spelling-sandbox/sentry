@@ -510,7 +510,7 @@ describe('Release Health Session Term', function () {
       SessionTerm.ABNORMAL,
       'node-express'
     );
-    expect(abnormalSessionTerm).toEqual('Non applicable for Javascript.');
+    expect(abnormalSessionTerm).toEqual('Non applicable for JavaScript.');
 
     // Healthy
     const healthySessionTerm = getSessionTermDescription(
@@ -576,7 +576,7 @@ describe('Release Health Session Term', function () {
       SessionTerm.ABNORMAL,
       'javascript'
     );
-    expect(abnormalSessionTerm).toEqual('Non applicable for Javascript.');
+    expect(abnormalSessionTerm).toEqual('Non applicable for JavaScript.');
 
     // Healthy
     const healthySessionTerm = getSessionTermDescription(

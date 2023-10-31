@@ -8792,7 +8792,7 @@ msgstr ""
 
 #: static/app/components/onboardingWizard/taskConfig.tsx:162
 msgid ""
-"Deminify Javascript source code to debug with context. Seeing code in "
+"Deminify JavaScript source code to debug with context. Seeing code in "
 "it's original form will help you debunk the ghosts of errors past."
 msgstr ""
 
@@ -19236,7 +19236,7 @@ msgid "During the session an unhandled global error/promise rejection occurred."
 msgstr ""
 
 #: static/app/views/releases/utils/sessionTerm.tsx:134
-msgid "Non applicable for Javascript."
+msgid "Non applicable for JavaScript."
 msgstr ""
 
 #: static/app/views/releases/utils/sessionTerm.tsx:135
@@ -23729,7 +23729,7 @@ msgstr ""
 #: static/app/views/settings/projectSourceMaps/list/index.tsx:139
 msgid ""
 "These source map archives help Sentry identify where to look when "
-"Javascript is minified. By providing this information, you can get better"
+"JavaScript is minified. By providing this information, you can get better"
 " context for your stack traces when debugging. To learn more about source"
 " maps, [link: read the docs]."
 msgstr ""

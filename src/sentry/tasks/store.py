@@ -383,7 +383,7 @@ def do_process_event(
     # this data is very unlikely to be sensitive data. This is why scrubbing
     # happens somewhere in the middle of the pipeline.
     #
-    # On the other hand, Javascript event error translation is happening after
+    # On the other hand, JavaScript event error translation is happening after
     # this block because it uses `get_event_preprocessors`.
     #
     # We are fairly confident, however, that this should run *before*
