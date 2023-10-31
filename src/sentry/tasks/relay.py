@@ -120,7 +120,7 @@ def compute_configs(organization_id=None, project_id=None, public_key=None):
     if organization_id:
         # We want to re-compute all projects in an organization, instead of simply
         # removing the configs and rely on relay requests to lazily re-compute them.  This
-        # is done because we do want want to delete project configs in `invalidate_project_config`
+        # is done because we do want to delete project configs in `invalidate_project_config`
         # which might cause the key to disappear and trigger the task again.  Without this behavior
         # it could be possible that refrequent invalidations cause the task to take excessive time
         # to complete.
