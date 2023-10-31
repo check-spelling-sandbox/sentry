@@ -267,7 +267,7 @@ def extract_click_fields(
     click_dict = {}
     for click_field in CLICK_FIELD_MAP.keys():
         click_val = item.pop(click_field, [])
-        # if there is at least one one element, the list will be filled empty strings for the non-click segments
+        # if there is at least one element, the list will be filled empty strings for the non-click segments
         # so if there is at least one value, return a list of the truthy values.
         # if not, return a list with a single None value
         # also map the clickhouse field values to their query names
