@@ -282,7 +282,7 @@ def frame_legacy(
                 hint="ignored because filename is a URL",
             )
         # XXX(dcramer): don't compute hash using frames containing the 'Caused by'
-        # text as it contains an exception value which may may contain dynamic
+        # text as it contains an exception value which may contain dynamic
         # values (see raven-java#125)
         elif interface.filename.startswith("Caused by: "):
             filename_component.update(

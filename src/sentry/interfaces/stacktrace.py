@@ -302,7 +302,7 @@ class Frame(Interface):
 
     def is_caused_by(self):
         # XXX(dcramer): don't compute hash using frames containing the 'Caused by'
-        # text as it contains an exception value which may may contain dynamic
+        # text as it contains an exception value which may contain dynamic
         # values (see raven-java#125)
         return self.filename.startswith("Caused by: ")
 
