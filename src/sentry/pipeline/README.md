@@ -114,7 +114,7 @@ Executing a pipeline is done through either one or two views.
 With one view it will both initialize the pipeline, and traverse through the
 pipeline. The downside of this approach is that the provider key,
 and potentially other information must be known at request time of each step,
-which may not always be possible (think strict oAuth redirect URL that cannot
+which may not always be possible (think strict OAuth redirect URL that cannot
 be parameterized)
 
 This may look something like
