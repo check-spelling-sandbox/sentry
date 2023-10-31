@@ -235,7 +235,7 @@ class Quota(Service):
         documentation for more information about the values.
 
         :param project: The project instance that is used to determine quotas.
-        :param key:     A project project key to obtain quotas for. If omitted,
+        :param key:     A project key to obtain quotas for. If omitted,
                         only project and organization quotas are used.
         :param keys:    Similar to ``key``, except for multiple keys.
         """
