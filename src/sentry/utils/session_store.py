@@ -34,7 +34,7 @@ class RedisSessionStore:
     >>> store.regenerate()
     >>> store.some_value = 'my value'
 
-    The value will be available across requests as long as the same same store
+    The value will be available across requests as long as the same store
     name is used.
 
     >>> store.some_value
