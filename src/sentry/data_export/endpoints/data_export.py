@@ -124,7 +124,7 @@ class DataExportEndpoint(OrganizationEndpoint, EnvironmentMixin):
         email user upon completion,
         """
         # The data export feature is only available alongside `discover-query`.
-        # So to export issue tags, they must have have `discover-query`
+        # So to export issue tags, they must have `discover-query`
         if not features.has("organizations:discover-query", organization):
             return Response(status=404)
 

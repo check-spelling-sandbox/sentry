@@ -15257,7 +15257,7 @@ msgstr ""
 
 #: static/app/views/onboarding/integrationSetup.tsx:147
 msgid ""
-"Don't have have permissions to create a Cloudformation stack? "
+"Don't have permissions to create a Cloudformation stack? "
 "[link:Invite your team instead]."
 msgstr ""
 

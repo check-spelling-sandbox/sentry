@@ -105,7 +105,7 @@ function IntegrationSetup(props: Props) {
           }}
         >
           {tct(
-            "Don't have have permissions to create a Cloudformation stack? [link:Invite your team instead].",
+            "Don't have permissions to create a Cloudformation stack? [link:Invite your team instead].",
             {
               link: (
                 <Button
