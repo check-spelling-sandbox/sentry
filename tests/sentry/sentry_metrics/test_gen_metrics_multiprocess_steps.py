@@ -108,7 +108,7 @@ def test_batch_messages() -> None:
 
     batch_messages_step, message1, message2 = _batch_message_set_up(next_step)
 
-    # submit the first message, batch builder should should be created
+    # submit the first message, batch builder should be created
     # and the messaged added to the batch
     batch_messages_step.submit(message=message1)
 
